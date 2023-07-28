@@ -1,0 +1,15 @@
+.divided, .divided-y {
+  & > * { @apply block my-6 relative w-full mx-8; }
+  & > *::before {
+    content: '';
+    @apply h-0.5 w-[calc(100%+4rem)] bg-black block absolute -top-3.5 -left-8;
+  }
+
+  :last-child::after {
+    content: '';
+    @apply h-0.5 w-[calc(100%+4rem)] bg-black block absolute -bottom-3.5 -left-8;
+  }
+  :where(.btn, .card) {
+    @apply after:!-bottom-6 before:-top-4;
+  }
+}

@@ -1,0 +1,6 @@
+.list {
+  .list-heading {
+    @apply text-xl text-black font-semibold;
+  }
+  ul, ol { @apply list-none list-inside; }
+}
