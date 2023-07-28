@@ -1,0 +1,9 @@
+.card.presentation {
+  @apply border-[3px] border-b-8 border-black focus:border-4 focus:border-b-8 rounded-lg font-semibold lowercase flex;
+  .card-header {
+    @apply flex-auto flex items-center justify-start px-8;
+  }
+  .card-image {
+    @apply flex-none flex justify-end;
+  }
+}

@@ -1,0 +1,6 @@
+.card.action {
+  @apply p-4 border-[3px] border-b-8 border-black focus:border-4 focus:border-b-8 rounded-lg font-semibold lowercase;
+
+  &.card-landscape { @apply flex flex-row items-center justify-center; }
+  &.card-portrait { @apply flex flex-col items-start justify-center; }
+} 

@@ -1,0 +1,4 @@
+.card {
+  &.card-primary { @apply bg-primary/50 hover:bg-primary/75; }
+  &.card-secondary { @apply bg-secondary/75 hover:bg-secondary/75; }
+}
