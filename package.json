@@ -3,7 +3,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "files": [
-    "dist/output.js",
+    "dist/base.json",
     "src/index.js"
   ],
   "engines": {
