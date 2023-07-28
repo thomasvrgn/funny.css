@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="flex-wrap inline-block p-8 space-y-8">
+  <button class="btn btn-primary">
+    hello world
+  </button> 
+  <button class="btn btn-secondary">
+    hello world
+  </button>
+  <button class="btn" disabled>
+    hello world
+  </button>
+
+  <input type="text" class="input" placeholder="Rechercher...">
+
+  <div class="divided">
+    <button class="w-full btn btn-primary">
+      hello world
+    </button> 
+    <button class="btn btn-secondary">
+      hello world
+    </button>
+    <button class="btn" disabled>
+      hello world
+    </button>
+  </div>
+  <div class="card action card-primary card-portrait">
+    Hello world
+  </div>
+
+  <div class="card presentation card-secondary">
+    <div class="card-header">
+      <span>add</span>
+    </div>
+    <div class="card-image">
+      <img src="actionPresentationCard.svg" alt="">
+    </div>
+  </div>
+
+  <input type="checkbox" name="" class="toggle color" id="">
+  <input type="checkbox" class="toggle letter after:content-['T']">
+
+  <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+
+  <select name="" class="select" id="">
+    <option value="">hello world</option>
+    <option value="">hello world</option>
+    <option value="">hello world</option>
+    <option value="">hello world</option>
+  </select>
+
+  <img src="actionPresentationCard.svg" class="avatar" alt="">
+
+  <span class="tag w-max">pill title</span>
+
+  <div class="list">
+    <span class="list-heading">my list</span>
+    <ul class="divided">
+      <button class="btn btn-primary">
+        hello world
+      </button> 
+      <button class="btn btn-primary">
+        hello world
+      </button> 
+      <button class="btn btn-primary">
+        hello world
+      </button> 
+    </ul>
+  </div>
+  <div class="accordion">
+    <span class="accordion-title">
+      test
+    </span>
+    <div class="accordion-content active">
+      test
+    </div>
+  </div>
+  <a class="link menu-link" href="">
+    <span class="menu-header">
+      test
+    </span>
+    <span class="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-last"><path d="m7 18 6-6-6-6"/><path d="M17 6v12"/></svg>
+    </span>
+  </a>
+  <div class="pin-container w-max">
+    <span class="pin">1</span>
+    <img src="actionPresentationCard.svg" class="avatar" alt="">
+  </div>
+</body>
+</html>
