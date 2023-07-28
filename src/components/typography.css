@@ -1,0 +1,17 @@
+h1 { @apply text-4xl font-extrabold leading-none tracking-tight text-content md:text-5xl lg:text-6xl; }
+h2 { @apply text-4xl font-extrabold text-content; }
+h3 { @apply text-3xl font-bold text-content; }
+h4 { @apply text-2xl font-bold text-content; }
+h5 { @apply text-xl font-bold text-content; }
+h6 { @apply text-lg font-bold text-content; }
+
+p { @apply text-opacity-70 text-content; }
+
+ul { @apply space-y-1 text-content/70 list-disc list-inside; }
+
+a {
+  @apply hover:underline;
+  &.link-primary { @apply text-primary; }
+}
+
+hr { @apply h-px bg-content border-0; }
