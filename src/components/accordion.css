@@ -1,0 +1,19 @@
+.accordion {
+  @apply w-full;
+  .accordion-title {
+    @apply text-black font-semibold text-lg lowercase relative block cursor-pointer;
+    &::after {
+      @apply absolute top-1/2 -translate-y-1/2 right-0 block w-6 h-6;
+      content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtY2hldnJvbi1kb3duIj48cGF0aCBkPSJtNiA5IDYgNiA2LTYiLz48L3N2Zz4=");
+    }
+  }
+  .accordion-content {
+    @apply overflow-hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    &.active {
+      @apply max-h-max;
+      transition: max-height 0.35s ease-in;
+    }
+  }
+}
