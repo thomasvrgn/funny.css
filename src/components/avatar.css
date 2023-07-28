@@ -1,0 +1,18 @@
+.avatar {
+  @apply rounded-full bg-primary flex items-center justify-center text-black font-bold w-8 h-8 object-cover;
+  &.avatar-small  { @apply w-8 h-8;   }
+  &.avatar-medium { @apply w-12 h-12; }
+  &.avatar-large  { @apply w-16 h-16; }
+  &.avatar-xlarge { @apply w-24 h-24; }
+}
+
+.avatar-group {
+  @apply flex items-center;
+  .avatar {
+    @apply relative border-white border-4;
+    &:not(:first-child) {
+      @apply -ml-3;
+    }
+    @apply z-10;
+  }
+}
