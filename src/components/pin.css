@@ -1,0 +1,6 @@
+.pin-container {
+  @apply relative;
+  .pin {
+    @apply absolute -top-2 -right-2 z-20 rounded-full bg-primary text-primary-foreground font-semibold text-xs px-2 py-1;
+  }
+}
