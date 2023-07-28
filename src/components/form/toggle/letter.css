@@ -1,0 +1,9 @@
+.toggle.letter {
+  @apply appearance-none relative h-8 w-8 bg-primary/50 flex items-center justify-center rounded-full cursor-pointer;
+  &:checked {
+    @apply border-black border-2 bg-primary;
+    &::after {
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+  }
+}
