@@ -1,0 +1,8 @@
+.link.action-link {
+  @apply p-4 border-2 border-black grid;
+  .action-header {
+    @apply flex flex-row;
+    .action-title { @apply flex-auto;    }
+    .action-icon  { @apply flex-initial; }
+  }
+}
