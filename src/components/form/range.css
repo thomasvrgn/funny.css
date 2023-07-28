@@ -1,0 +1,32 @@
+@define-mixin thumb {
+  position: relative;
+  height: theme("height.6");
+  width: theme("width.6");
+  border: none;
+  border-radius: theme("borderRadius.full");
+  background-color: theme("colors.primary.foreground");
+  appearance: none;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  --size: 100vmax;
+  --offset: 0.6rem;
+  box-shadow: 0 0 0 3px theme("colors.primary.DEFAULT") inset,
+    calc(var(--size) * -1 - var(--offset)) 0 0 var(--size);
+
+}
+
+@define-mixin track {
+  height: theme("height.2");
+  width: theme("width.full");
+  border-radius: theme("borderRadius.full");
+  background-color: theme("colors.neutral.400");
+}
+
+.input-range {
+  @apply bg-transparent rounded-full overflow-hidden h-6 w-full cursor-pointer appearance-none;
+  &::-webkit-slider-runnable-track { @mixin track; }
+  &::-moz-range-track { @mixin track; }
+  &::-webkit-slider-thumb { @mixin thumb; }
+  &::-moz-range-thumb { @mixin thumb; }
+}

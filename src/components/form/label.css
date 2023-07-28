@@ -1,0 +1,3 @@
+.label {
+  @apply text-sm text-primary-foreground font-semibold;
+}

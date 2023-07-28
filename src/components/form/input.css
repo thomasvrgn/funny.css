@@ -1,0 +1,7 @@
+.input {
+  @apply 
+    border-[3px] border-black 
+    placeholder-neutral-400 py-1 px-4 rounded-lg
+    focus:border-4 hover:border-primary/80 focus:outline-none;
+  &.input-search { @apply rounded-full; }
+}

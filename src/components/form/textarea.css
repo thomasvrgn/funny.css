@@ -1,0 +1,8 @@
+.textarea {
+  @apply 
+    border-[3px] border-black appearance-none relative
+    placeholder-neutral-400 py-1 px-4 rounded-lg
+    focus:border-4 focus:outline-none;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtZ3JpcC1ob3Jpem9udGFsIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjkiIHI9IjEiLz48Y2lyY2xlIGN4PSIxOSIgY3k9IjkiIHI9IjEiLz48Y2lyY2xlIGN4PSI1IiBjeT0iOSIgcj0iMSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTUiIHI9IjEiLz48Y2lyY2xlIGN4PSIxOSIgY3k9IjE1IiByPSIxIi8+PGNpcmNsZSBjeD0iNSIgY3k9IjE1IiByPSIxIi8+PC9zdmc+") no-repeat white 99% 99.9%;
+  background-size: 16px;
+}
